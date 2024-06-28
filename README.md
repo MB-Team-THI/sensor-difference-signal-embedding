@@ -53,15 +53,12 @@ Visualize the created latent embedding space by the interactive visualization to
 ## Acknowledgments
 The authors acknowledge the support of ZF Friedrichshafen AG.
 
-
-We thank the authors of
+We would especially like to thank the authors for their open source contributions that made this project possible.
 
 - [StreamPETR](https://github.com/exiawsh/StreamPETR)
 - [FocalFormer3D](https://github.com/NVlabs/FocalFormer3D)
 - [UMAP-Explorer](https://github.com/GrantCuster/umap-explorer/)
   
-for their open source contribution which made this project possible.
-
 ---
 
 

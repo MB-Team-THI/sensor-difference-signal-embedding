@@ -1,0 +1,11 @@
+*.pyc
+*.json
+\data
+*.png
+tuna
+*.prof
+\runs
+\logs
+logs.log
+*.env
+\wandb

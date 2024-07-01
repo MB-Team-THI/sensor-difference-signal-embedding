@@ -18,9 +18,12 @@
 ## Installation
 
 1. Clone this repository
-2. Download the data from [Data-Link](https://faubox.rrze.uni-erlangen.de/getlink/fiSsrNqZMH2dg7W8q7MaEF/nuscenes) and unzip it into the `\data`, rooted in the project directory (the resulting path for e.g., the training data is `\data\nuscenes\train\base\`). This data contains the processed and associated object pairs from the nuScenes train and evaluation split, hereby one sample corresponds to one object pair and not a whole scene as in the original nuScenes dataset.
-3. Run `python main.py` to train the model, adjust parameters as required in `main.py`.
+2. Install the required python packages (cf. `requirements.txt`)
+3. Download the data from [Data-Link](https://faubox.rrze.uni-erlangen.de/getlink/fiSsrNqZMH2dg7W8q7MaEF/nuscenes) and unzip it into the `\data`, rooted in the project directory (the resulting path for e.g., the training data is `\data\nuscenes\train\base\`). This data contains the processed and associated object pairs from the nuScenes train and evaluation split, hereby one sample corresponds to one object pair and not a whole scene as in the original nuScenes dataset.
+4. Run `python main.py` to train the model, adjust parameters as required in `main.py`.
 
+
+This code is developed and tested on a platform with Windows 10 and a CUDA-capable GPU (NVIDIA T1200).
 
 
 ## Visualization

@@ -33,7 +33,7 @@ def create_subdivision_distance(subdivisions_params, obj_ego, obj_lidar, obj_cam
 
 
 def create_subdivision_day_night(scene_info):
-    base_dir = 'C:\\Users\\fertig\\Documents\\FILES\\data\\datasets\\nuscenes\\1_original_dataset\\'
+    base_dir = 'output_files\\'
     filename = 'scene_trainval_test.json'
     f = open(base_dir + filename)
     data = json.load(f)
@@ -49,7 +49,7 @@ def create_subdivision_day_night(scene_info):
 
 
 def create_subdivision_rain_no_rain(scene_info):
-    base_dir = 'C:\\Users\\fertig\\Documents\\FILES\\data\\datasets\\nuscenes\\1_original_dataset\\'
+    base_dir = 'output_files\\'
     filename = 'scene_trainval_test.json'
     f = open(base_dir + filename)
     data = json.load(f)

@@ -14,7 +14,7 @@ from src.utils.utils_object_pair_dataloader import add_dist_ego_obj
 
 
 def _visualize_trajectories(old, new, obj_pair_name):
-    output_dir = 'C:/Users/fertig/Documents/FILES/data/datasets/nuscenes/5_associations/_verify_trajectory_rotation/'
+    output_dir = 'output_files\\verify_trajectory_rotation\\'
 
     fig = plt.figure()
     fig.set_size_inches(15, 10.5)

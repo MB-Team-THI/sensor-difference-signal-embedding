@@ -16,10 +16,10 @@ save_config = False
 meta_info = {"name":"advanced-autoencoder phase-1", 
              "description": "advanced-autoencoder phase 1: two encoders (LSTM or Transformer) that separately encodes the camera and lidar object; \
               two decoders (LSTM) separately reconstructing the trajectories; MSE-loss; save plot of original and reconstructed trajectory"}
-base_dir  = 'BASE_DIR'
-out_dir   = 'out\\'
+base_dir  = ''
+out_dir   = 'output_files\\models\\'
 
-wandb_project_name = "TBD"
+wandb_project_name = "sdse"
 
 if not train_mode:
     # Load trained model for evaluation
@@ -38,7 +38,7 @@ representation_type     = representation_types[1]
 # train number
 # train hypers
 # train_name = 'train_' + idx
-training = {'idx': 152, 'traintest': [70, 30], 'num_gpus': 1, 'eval_epochs': [1, 100, 150, 200, 300],
+training = {'idx': 152, 'traintest': [70, 30], 'num_gpus': 1, 'eval_epochs': [1,2, 100, 150, 200, 300],
             'enable_grad_clip': True, 'clip_value': 5, 'dummy_example': dummy_example_enabled, 
             'save_embeddings': ['train-set', 'test-set']}
 # dataset number

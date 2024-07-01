@@ -424,9 +424,9 @@ def save_eval_results(output_dir, res_embeddings, embedding_order, label_dict, d
 
 
 
-class eval_152(eval):
+class eval_0(eval):
     def __init__(self,
-                 idx                                = 152,
+                 idx                                = 0,
                  architecture_type                  = architecture_types[0],
                  decoderT_type                      = decoderT_types[0],
                  processed_objects                  = processed_objects_types[0],
@@ -437,7 +437,7 @@ class eval_152(eval):
                  norm_max_values                    = {},
                  error_signal_features              = [],
                  output_dir                         = '',
-                 name                               = 'eval approach 152',
+                 name                               = 'eval approach 0',
                  input_     	                    = 'dataset reference and trained model',
                  output                             = 'embeddings, labels and image (original and reconstructed trajectory)',
                  description                        = 'Apply the whole dataset to the model, save embeddings after the encoder (latent-space) for the UMAP visualization, create pseudo-labels for the UMAP visualization, and save images (of original and reconstructed trajectory) for visualization.',

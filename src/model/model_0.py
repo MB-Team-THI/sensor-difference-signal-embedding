@@ -10,8 +10,8 @@ import torchvision.models as models
 from x_transformers import ContinuousTransformerWrapper, Encoder
 
 from src.utils.create_image_representation import trajectory_to_image
-from src.train.loss.loss_152 import calculate_error_signal_original
-from src.train.loss.loss_152 import calculate_error_signal_full_with_padding
+from src.train.loss.loss_0 import calculate_error_signal_original
+from src.train.loss.loss_0 import calculate_error_signal_full_with_padding
 from src.utils.data_adaption import norm_error_signal
 from src.utils.data_adaption import norm_error_signal_logarithmic
 
@@ -883,7 +883,7 @@ class AE_error_signal(nn.Module):
 
 
 
-class model_152(model):
+class model_0(model):
     def __init__(self, 
                 architecture_type   = None,
                 encoderI_type       = None, 
@@ -902,7 +902,7 @@ class model_152(model):
                 z_dim_m             = 128,
                 channels            = 1,
                 traj_size           = 3,
-                idx                 = 152,
+                idx                 = 0,
                 name                = 'Advanced autoencoder approach',
                 size                = None,
                 n_params            = None,
@@ -1009,4 +1009,4 @@ class model_152(model):
         return True
 
 def generate_model(**model_params):
-    return model_152(**model_params)
+    return model_0(**model_params)

@@ -28,9 +28,9 @@ def prep_data(input_data, cuda):
         input_data_out = dict((k, v.cuda()) for k,v in input_data.items())
     return input_data_out
 
-class train_152(Training):
+class train_0(Training):
     def __init__(self,
-                 idx                      = 152,
+                 idx                      = 0,
                  crops_for_assignment     = None,
                  nmb_crops                = None,
                  temperature              = 0.1,
@@ -169,7 +169,7 @@ class train_152(Training):
                 if "test-set" in self.save_embeddings:
                     # Perform evaluation for TEST set and save embeddings
                     # save_clustering_embeddings(model, dataset_param_test, run_name=run_name, epoch=epoch,  
-                    #                            cluster_rep=cluster_rep,   eval_152=eval_fc,  dummy_rand_vals=self.dummy_rand_vals)
+                    #                            cluster_rep=cluster_rep,   eval_0=eval_fc,  dummy_rand_vals=self.dummy_rand_vals)
                     eval_fc(model, dataset_param_test, dataloader_test = dataloader_test, 
                             run_name=run_name, epoch=epoch, dummy_rand_vals=self.dummy_rand_vals)
 

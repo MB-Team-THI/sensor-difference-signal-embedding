@@ -36,9 +36,9 @@ def off_diagonal(x):
 
 
 
-class loss_152(loss):
+class loss_0(loss):
     def __init__(self,
-                idx                     = 152,
+                idx                     = 0,
                 architecture_type       = architecture_types[0],
                 decoderT_type           = decoderT_types[0],
                 processed_objects       = processed_objects_types[0],

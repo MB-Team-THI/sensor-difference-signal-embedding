@@ -11,10 +11,10 @@ import einops
 
 
 
-class dataloader_152(object):
+class dataloader_0(object):
     def __init__(
         self,
-        idx=152,
+        idx=0,
         dataset=None,
         batch_size=None,
         epochs=None,

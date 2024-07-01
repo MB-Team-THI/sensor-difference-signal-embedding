@@ -38,7 +38,7 @@ representation_type     = representation_types[1]
 # train number
 # train hypers
 # train_name = 'train_' + idx
-training = {'idx': 152, 'traintest': [70, 30], 'num_gpus': 1, 'eval_epochs': [1,2, 100, 150, 200, 300],
+training = {'idx': 0, 'traintest': [70, 30], 'num_gpus': 1, 'eval_epochs': [1,2, 100, 150, 200, 300],
             'enable_grad_clip': True, 'clip_value': 5, 'dummy_example': dummy_example_enabled, 
             'save_embeddings': ['train-set', 'test-set']}
 # dataset number
@@ -80,17 +80,17 @@ dataset_test = [{'name':                    'nuscenes',
 # dataloader hypers
 
 # For VICRec a batch_size >= 256 is probably required.
-train_dataloader = {'idx':152, 'batch_size': 32, 'epochs': 400, 
+train_dataloader = {'idx':0, 'batch_size': 32, 'epochs': 400, 
                     'num_workers':8, 'shuffle':True, 'representation':'trajectory'}
 
-test_dataloader  = {'idx':152, 'batch_size': 32, 'num_workers':8, 
+test_dataloader  = {'idx':0, 'batch_size': 32, 'num_workers':8, 
                     'shuffle':False, 'representation':'trajectory'}
 
 # model number
 # model hypers
 
 #model = {'idx':0,'model_depth':18, 'projector_dim': [1024, 2048]}
-model = {'idx':                     152, 
+model = {'idx':                     0, 
          # ['Encoder', 'AE', 'AE_advanced_phase1' AE_advanced_phase2', 'AE_error_signal']
          'architecture_type':       "AE_error_signal",
          # processed_objects ['obj_pair', 'obj_lidar', 'obj_camera', 'recon_error_sgn', 'error_signal']
@@ -148,10 +148,10 @@ else:
 
 # eval number
 # eval hypers
-# TODO futher adapt eval_152.py for the "AE_advanced_phase2" as well
+# TODO futher adapt eval_0.py for the "AE_advanced_phase2" as well
 
 output_dir = base_dir + out_dir + run_name
-evaluation = {'idx':                                152,
+evaluation = {'idx':                                0,
               'architecture_type':                  model['architecture_type'],
               'decoderT_type':                      model['decoderT_type'],
               'processed_objects':                  model['architecture_args']['processed_objects'],
@@ -173,7 +173,7 @@ scheduler = None
 
 # loss number
 # loss hypers
-loss = {'idx':152,
+loss = {'idx':                   0,
         'architecture_type':     model['architecture_type'],
         'decoderT_type':         model['decoderT_type'],
         'processed_objects':     model['architecture_args']['processed_objects'],

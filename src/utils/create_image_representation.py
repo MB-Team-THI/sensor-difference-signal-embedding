@@ -11,7 +11,7 @@ from matplotlib.image import imsave
 
 from src.utils.image_creation import SignalToImageConverter
 # from src.utils.image_creation import plot_signals
-from src.train.loss.loss_152 import calculate_error_signal_full_with_padding
+from src.train.loss.loss_0 import calculate_error_signal_full_with_padding
 
 max_vals = {'diff_x':                   -1,
             'diff_y':                   -1,
@@ -67,7 +67,7 @@ def error_signal_to_image(calc_error_signal, norm_max_values = [], obj_camera=[]
 
         ### Obtain error signal
         if False:
-            # For "eval_152.py"
+            # For "eval_0.py"
             batch_camera = [torch.moveaxis(torch.from_numpy(obj_camera).to(torch.float).t(), 0, 1)]
             batch_lidar  = [torch.moveaxis(torch.from_numpy(obj_lidar).to(torch.float).t(), 0, 1)]
             batch_ego    = [torch.moveaxis(torch.from_numpy(obj_ego).to(torch.float).t(), 0, 1)]

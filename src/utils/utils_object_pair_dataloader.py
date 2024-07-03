@@ -4,6 +4,7 @@ from scipy.spatial.distance import euclidean
 
 from src.utils.polar_coordinates import cart2pol
 
+
 def add_polar_coords(obj_camera, obj_lidar, obj_ego, obj_gt, center_for_each_step):
 
     if obj_gt != []:

@@ -1,8 +1,10 @@
-from src.train.optimizer.optimizer import optimizer
+
 import torch
 from torch.nn.parameter import Parameter
 import torch.nn.functional as F
 import torch.optim as optim
+
+from src.train.optimizer.optimizer import optimizer
 
 class optimizer_1(optim.Adam):
     def __init__(self,

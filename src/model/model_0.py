@@ -1,4 +1,4 @@
-from src.model.model import model 
+
 import cv2
 import math
 import torch
@@ -9,6 +9,7 @@ import torch.nn.functional as F
 import torchvision.models as models
 from x_transformers import ContinuousTransformerWrapper, Encoder
 
+from src.model.model import model 
 from src.utils.create_image_representation import trajectory_to_image
 from src.train.loss.loss_0 import calculate_error_signal_original
 from src.train.loss.loss_0 import calculate_error_signal_full_with_padding
